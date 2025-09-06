@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: aqua;
+      }
+      h1 {
+        text-align: center;
+        font-size: 60px;
+      }
+      .box {
+        width: 180px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: black;
+        margin: 10px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+      }
+      #main1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .tom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .tom .res {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .winning {
+        background-color: yellow;
+        color: red;
+        border: 4px solid black;
+      }
+      .highlighted{
+        border: 4px solid red;
+      }
+      button{
+        background-color: green;
+        color: white;
+        padding: 10px 10px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+      }
+    </style>
+    <title>lottry game</title>
+  </head>
+  <body>
+    <h1><b>Lottery Game</b></h1>
+    <div id="main1"></div>
+    <div class="tom">
+      <p class="res"></p>
+      <button id="bts">pick a number</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
